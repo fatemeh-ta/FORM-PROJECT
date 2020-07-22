@@ -1,0 +1,71 @@
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../../node_modules/font-awesome/fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+      url('../../node_modules/font-awesome/fonts/fontawesome-webfont.woff2') format('woff2'),
+      url('../../node_modules/font-awesome/fonts/fontawesome-webfont.woff') format('woff'),
+      url('../../node_modules/font-awesome/fonts/fontawesome-webfont.ttf') format('truetype');
+      //url('../../node_modules/font-awesome/fonts/fontawesome-webfont.svg') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family:'Vazir';
+  src:url('../../font/Vazir-Light.eot') format('embedded-opentype'),
+      url('../../font/Vazir.woff2') format('woff2'),
+      url('../../font/Vazir.woff') format('woff'),
+      url('../../font/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+
+body {
+  font-family:"Vazir";
+  i {
+    font-family: "FontAwesome";
+  }
+}
+.capbox {
+	background-color: #eef3fc;
+	//background-image: linear-gradient(#BBBBBB, #9E9E9E);
+	border: #3273dc 0px solid;
+	border-width: 2px 2px 2px 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	display: inline-block;
+	padding: 5px 8px 5px 8px;
+  border-radius: 4px 4px 4px 4px;
+  margin: 0 0 8px 0;
+  #CaptchaDiv {
+    color: #000000;
+    font: normal 25px Impact, Charcoal, arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFFFFF;
+    user-select: none;
+    display: inline-block;
+    padding: 3px 14px 3px 8px;
+    margin-right: 4px;
+    border-radius: 4px;
+    }
+  .capbox-inner {
+    font: bold 12px arial, sans-serif;
+    color: #000000;
+    background-color: #bbc8dd;
+    margin: 0px auto 0px auto;
+    padding: 3px 10px 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    #CaptchaInput {
+      border: #3273dc 2px solid;
+      margin: 3px 0px 1px 0px;
+      width: 105px;
+      }
+    }
+	}
+
+
+
+

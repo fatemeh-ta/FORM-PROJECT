@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="us-fa">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORM</title>
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="stylesheet" href="./bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/pach.css">
+  </head>
+  <body>
+    <div class="container" style="padding:16px">
+      <div class="columns">
+        <div class="column">
+          <!--user name-->
+          <div class="field">
+            <label class="label">User Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="نام کاربری" id="user" title="نام کاربری خود را وارد نمایید">
+            </div>
+            <p class="help is-success" id="message-user"></p>
+          </div>
+          <!----National Code------>
+          <div class="field">
+            <label class="label">National Code</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success"  placeholder="National Code" value="" id="code" title="کد ملی را وارد نمایید">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help is-success" id="message-code"></p>
+          </div>
+          <!----telephon------>
+          <div class="field">
+            <label class="label">Tel :</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="tel" placeholder="09*********" id="phone" title="شماره موبایل خود را وارد نمایید">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help is-danger" id="phone-messsage"></p>
+          </div>
+          <!----pass------>
+          <div class="field">
+            <label class="label">Pass :</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="password" placeholder="رمز عبور" id="pwd">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help is-danger" id="password-messsage"></p>
+          </div>
+          <!----Confirm pass------>
+          <div class="field">
+            <label class="label">Confirm Pass :</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="password" placeholder="مجددا رمز عبور را وارد نمایید" id="confirm-pwd">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help is-danger" id="confirm-messsage"></p>
+          </div>
+          <!-- START CAPTCHA -->
+          <div class="capbox">
+            <div id="CaptchaDiv"></div>
+            <div class="capbox-inner">
+              Type the number:<br>
+              <input type="hidden" id="txtCaptcha">
+              <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+            </div>
+          </div>
+          <!-- END CAPTCHA -->
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link" onclick="test()">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-link is-light" onclick="cleardata()">Cancel</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
